@@ -1,3 +1,677 @@
+// import java.util.*;
+
+// class main{
+
+//     public static void main(String[] args){
+      
+
+//     int[] arr ;
+
+//     arr = new int[3];
+
+//     Scanner in = new Scanner(System.in);
+//     for(int i = 0 ; i < 3; ++i){
+//         System.out.println("Enter the "+(i+1)+"th value of array = ");
+//         arr[i] = in.nextInt();
+//     }
+
+//     int max = arr[0];
+//     for(int i = 0 ; i < 3; ++i){
+//         if(arr[i] > max)
+//             max = arr[i];
+
+//     }
+
+//     System.out.println("SO the max value of the three num is = " + max);
+
+//     }
+// }
+
+
+
+
+
+
+
+
+//    JACKED array in java 
+
+
+
+
+
+
+
+// import java.util.*;
+
+// class main{
+
+//     public static void main(String[] args){
+
+//         int arr[] = {1,2,3,4,5,6,7,8,9,10};
+//         int sum=0;
+
+//         for(int i : arr){
+//             System.out.println(i+ " ");
+//             sum += i;
+//         }
+
+//         System.out.println("the sum of the array is = "+ sum);
+
+
+
+//     }
+
+// }
+
+
+
+
+
+
+
+// import java.util.*;
+
+// class main{
+
+//     public enum colo {
+//         red(10),green(20),blue(30);
+//         int x;
+//         colo(int a){
+//             x = a;
+//         }
+
+//         int get(){
+
+//             return x;
+//         }
+//     }
+
+//     public static void main(String[] args){
+
+//         colo arr[] = colo.values();
+
+//         for(colo i : arr){
+//             System.out.println(i + " value of  = " + i.get());
+//         }
+
+
+//     }
+
+
+
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+// import java.util.*;
+
+// class main{
+
+//     public static void main(String[] args){
+
+//         int arr[][];
+//         int row;
+//         Scanner in  = new Scanner(System.in);
+
+//         System.out.println("Enter the number of rows = ");
+//         row = in.nextInt();
+
+//         arr = new int[row][];
+
+//         for( int i = 0 ; i < row ; ++i){
+//             int col;
+//             System.out.println("Enter the number of colums for " + (i+1) + "th row = ");
+//             col = in.nextInt();
+            
+//             arr[i] = new int[col];
+
+//             System.out.println("Now enter the vlaue of each element");
+
+//             for(int j = 0 ; j < col; ++j){
+//                 int temp = in.nextInt();
+//                 arr[i][j] = temp;
+//             }
+//         }
+
+//         syste
+        
+
+
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+//         System.out.println("The velues inside the array is = ");
+    
+//         for(int[] i : arr){
+//             for(int j : i ){
+//                 System.out.print(j+" ");      
+//             }
+//             System.out.println(" ");
+//         }
+
+//     }
+// }
+
+
+
+
+
+
+
+// programs where lots of manipulation in the array is needed.
+
+// ArrayList inherits AbstractList class and implements List interface.
+
+//      ArrayList 
+
+
+// import java.util.*;
+
+// class main{
+
+//     public static void main(String[] args){
+
+//         int size;
+
+//         System.out.println("Enter the the size of the ArrayList = ");
+//         Scanner in = new Scanner(System.in);
+
+//         size = in.nextInt();
+
+//         ArrayList<Integer> arr = new ArrayList<Integer> (size);
+
+//         for(int i = 0 ; i < size ;++i){
+//             int temp = in.nextInt();
+//             arr.add(temp);
+//         }
+
+//         System.out.println(arr);
+//     }
+
+
+
+
+
+
+
+// }
+
+
+
+
+
+// import java.util.*;
+
+// class main{
+
+//     main(){
+//         System.out.println("Default constructor");
+//     }
+
+//     main(int a){
+//         this();
+//         System.out.println("This is the value of x = " + a);
+//     }
+
+//     main(int a, int b){
+//         this(5);
+//         int temp =a*b;
+//         System.out.println("This is the value of x * y = "+ temp);
+//     }
+
+//     public static void main(String[] args){
+
+//         main obj = new main(6, 10);
+
+
+
+//     }
+
+
+
+// }
+
+
+//::::::::::::::::::::::::::::::::::::::::::::::::::::   DATE 05/02/2020  :::::::::::::::::::::::::::::::::::::::::::::::
+
+
+
+// import java.util.*;
+
+// class Main  {
+
+//     String name;
+
+//     Main(){
+//         this("");
+//         System.out.println("No-argument constructor of base class");
+
+//     }
+//     Main(String name){
+//         this.name =name;
+//         System.out.println("Calling parametrised constructor of base class ");
+//     }
+
+// }
+
+// class Derived extends Main{
+
+//     Derived(){
+//         System.out.println("No-argument constructor of derived");
+//     }
+
+//     Derived(String name){
+
+//         //super keyword calls the constructor of the parent class.
+
+//         super(name);
+//         System.out.println("Calling the parametrised constructor of the Derived class");
+//     }
+
+//     public static void main(String[] args){
+
+//         Derived obj = new Derived("test");
+
+
+//     }
+// }
+
+
+//--------------------------------------------
+
+
+// import java.util.*;
+
+// class Main{
+
+//     int i = 0 ; 
+
+//     private static MySingleton ob;
+//     private MySingleton(){}
+
+//     private static MySingleton getInstance()
+//     {
+//         if(ob == null){
+//             ob = new MySingleton();
+//         }
+//         return ob;
+//     }
+
+//     void showMessage(){
+//         i = i+5;
+//         System.out.println("Hello World!! " + i);
+//     }
+
+
+
+
+// }
+
+
+
+
+//--------------------------------------------
+
+//--------------------------------------------//--------------------------------------------//--------------------------------------------
+//                        DATE  :=     10/02/2020      Topics = Strings
+
+
+
+
+
+// import java.util.*;
+
+// class main{
+//     public static void main(String[] args){
+
+//         String a = "Java";
+//         String b = "Java";
+
+
+//         String obj1 = new String("Java");
+//         String obj2 = new String("Java");
+
+        
+        
+//         if(a == b){
+//             System.out.println("True");
+//         }else 
+//             System.out.println("False");
+
+        
+//         if(obj1 == obj2){
+//             System.out.println("True");
+//         }else
+//             System.out.println("False");
+
+
+//     }
+// }
+
+
+
+
+// import java.util.*;
+
+// class main{
+
+//     public static void main(String[] args){
+
+//         String str = "have-fun-in-the-life-of-no-gun";
+
+//         String [] s= str.split("-",0);
+
+//         // we have three options for splitting 
+//         // positive, negtive and zero; 
+
+//         System.out.println(s.length);
+
+//         for(String x: s)
+//             System.out.print(x);
+
+        
+//         String joinString = String.join("-","have","fun");
+//         System.out.println(joinString);
+
+
+
+
+
+//     }
+
+
+
+// }
+
+
+
+//////              Test java practice
+
+// import java.util.Scanner;
+    
+// class Banking {
+//     static int menu() {
+//         Scanner scan = new Scanner(System.in);
+//         System.out.println("1.Deposit\n2.Credit\n3.GetBalance\n4.Exit\nEnter your choice:");
+//         return scan.nextInt();
+//     }
+//     public static void main(String[] args) {
+//         Scanner scan = new Scanner(System.in);
+//         System.out.print("Create Account:\nEnter your name:");
+//         String name = scan.next();
+//         System.out.println("Enter your id:");
+//         int id = scan.nextInt();
+//         System.out.println("Enter your opening balance:");
+//         float balance = scan.nextFloat();
+//         int choice;
+//         Account a = new Account(id, balance, name);
+//         do{
+//             choice=menu();
+//             switch(choice){
+//             case 1: {
+//                     System.out.println("Enter deposit amount:");
+//                     float amount=scan.nextFloat();
+//                     a.deposit(amount);
+//                     break;
+//                 }
+//                 case 2:{
+//                     System.out.println("Enter credit amount:");
+//                     float amount=scan.nextFloat();
+//                     a.credit(amount);
+//                     break;
+//                 }
+//                 case 3:{
+//                     System.out.println("Current Balance:" + a.getBalance());
+//                     break;
+//                 }
+//                 case 4:{
+//                     System.exit(0);
+//                 }
+//             }
+//         } while (choice != 4);
+//     }
+// }
+
+// class Account {
+//     int aId;
+//     float balance;
+//     String name;
+//     Account(int aId,float balance,String name)
+//     {
+//         this.aId = aId;
+//         this.name = name;
+//         this.balance = balance;
+//     }
+
+//     float getBalance() {
+//         return this.balance;
+//     }
+
+//     void deposit(float amount) {
+//         this.balance = this.balance + amount;
+//     }
+
+//     void credit(float amount) {
+//         if (amount > this.getBalance())
+//         {
+//             System.out.println("no money gaich");
+//         }
+//         else
+//             this.balance = this.balance - amount;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+// import java.util.*;
+
+// class menu{
+
+//     String name;
+//     int choice;
+//     int price;
+
+//     Scanner nn = new Scanner(System.in);
+//     menu(String name){
+//         this.name = name;
+//     }
+
+//     void start(){
+//         int temp;
+//         System.out.println("Enter 1 for fish Rs 250.");
+//         temp = nn.nextInt();
+//         if(temp  == 1){
+//             int tt;
+//             System.out.println("Okey \n How many you want to order = ");
+//             tt = nn.nextInt();
+//             price += 250 * tt;
+            
+//         }
+//         System.out.println("Enter 1 to order again and 2 to get the bill.");
+//         temp = nn.nextInt();
+//         if(temp == 1){
+//             firstMenu();
+//         }
+//     }
+//     void meal(){
+//         int temp;
+//         System.out.println("Enter 1 for Rajma-chawal Rs 50.");
+//         temp = nn.nextInt();
+//         if(temp  == 1){
+//             int tt;
+//             System.out.println("Okey \n How many you want to order = ");
+//             tt = nn.nextInt();
+//             price += 50 * tt;
+            
+//         }
+//         System.out.println("Enter 1 to order again and 2 to get the bill.");
+//         temp = nn.nextInt();
+//         if(temp == 1){
+//             firstMenu();
+//         }
+
+//     }
+//     void deserts(){
+//         int temp;
+//         System.out.println("Enter 1 for ice-cream Rs 100.");
+//         temp = nn.nextInt();
+//         if(temp  == 1){
+//             int tt;
+//             System.out.println("Okey \n How many you want to order = ");
+//             tt = nn.nextInt();
+//             price += 100 * tt;
+            
+//         }
+//         System.out.println("Enter 1 to order again and 2 to get the bill.");
+//         temp = nn.nextInt();
+//         if(temp == 1){
+//             firstMenu();
+//         }
+
+//     }
+//     void drinks(){
+//         int temp;
+//         System.out.println("Enter 1 for beer Rs 350.");
+//         temp = nn.nextInt();
+//         if(temp  == 1){
+//             int tt;
+//             System.out.println("Okey \n How many you want to order = ");
+//             tt = nn.nextInt();
+//             price += 350 * tt;
+            
+//         }
+//         System.out.println("Enter 1 to order again and 2 to get the bill.");
+//         temp = nn.nextInt();
+//         if(temp == 1){
+//             firstMenu();
+//         }
+
+//     }
+
+//     void firstMenu(){
+//         System.out.println("Welclome Mr. "+ this.name +", what whould you like to order :- ");
+//         System.out.println("Enter 1 for Statters ");
+//         System.out.println("Enter 2 for Meal");
+//         System.out.println("Enter 3 for Deserts");
+//         System.out.println("Enter 4 for Drinks");
+
+//         System.out.println("Enter your choice :- ");
+//         choice = nn.nextInt();
+//         switch(choice){
+//             case 1:
+//                 start();
+//                 break;
+//             case 2:
+//                 meal();
+//                 break;
+//             case 3:
+//                 deserts();
+//                 break;
+//             case 4:
+//                 drinks();
+//                 break;
+
+//         }
+//     }
+// }
+// class main{
+//     public static void main(String[] args){
+//         Scanner in = new Scanner(System.in);
+        
+//         String name;
+
+//         System.out.println("Welcome to the restorent ");
+//         System.out.println(" ");
+//         System.out.println("Please enter your name = ");
+//         name = in.nextLine();
+
+
+//         menu obj = new menu(name);
+
+//         obj.firstMenu();
+
+//         System.out.println("Okey Mr."+name+", Your total bill is "+ obj.price);
+        
+//     }
+// }
+
+
+
+
+
+
+
+
+class Animal{
+
+    void eat(){
+        System.out.println("eating...");
+    }
+
+}
+class Dog extends Animal{
+    void bark(){
+        System.out.println("barking...");
+    }
+}
+
+class TestInheritanceSingle{
+
+
+    
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+//    **********************************  After MT     **********************************
+
+
+
+
+
+
+
+
+
 //                      Java        Date = 02/03/2020
 
 //import java.util.*;
