@@ -1,4 +1,4 @@
-import java.util.*
+import java.util.*;
 
 /*
 Q2: Write a program to define two interfaces UGC and AICTE both having a default method
