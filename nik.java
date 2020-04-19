@@ -11,7 +11,7 @@ class nikhil
 { 
 	public static void main(String args[]) 
 	{ 
-        ArrayList<String> aList1 =  new ArrayList<String>();new ArrayList<String>();
+        ArrayList<String> aList1 =  new ArrayList<String>();
         ArrayList<String> aList2 = new ArrayList<String>(); 
 
         //adding the elements of Array List 1.
