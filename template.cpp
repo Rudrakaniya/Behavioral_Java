@@ -3,6 +3,7 @@
 #include<bits/stdc++.h>
 #define endl "\n"
 #define ll long long 
+#define ull unsigned long long
 const unsigned int M = 1000000007; 
 
 bool comp(int a, int b){
