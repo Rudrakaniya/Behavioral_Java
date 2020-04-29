@@ -9,6 +9,19 @@ const unsigned int M = 1000000007;
 bool comp(int a, int b){
 	return a > b;
 }
+bool is_prime(int n) {
+    if (n == 1) 
+        return false;
+
+    int i = 2;
+    while (i*i <= n) {
+        if (n % i == 0) {
+            return false;
+        }
+        i += 1;
+    }
+    return true;
+}
 
 using namespace std;
 
@@ -20,33 +33,10 @@ int main(){
 	cin >> t;
 
 	while(t--){
-		ll size;
-		cin >> size;
-		vector<unsigned ll> arr(size);
-
-		for (int i = 0; i < size; ++i){
-			cin >> arr[i];
-		}
 		
-		unsigned ll t{0}, sum{0};
-		sort(arr.begin(), arr.end(), comp);
-		for (int i = 0; i < size;++i){
-			if(arr[i] == 0){
-				continue;
-				break;
-			}
-			else
-			{
-				ll a = (arr[i] - t);
-				(a < 0) ? a = 0 : a;
-				sum = sum + a;
-				sum = sum % M;
-				t++;
-			}
-		}
-		cout << sum << endl;
+		/* CODE GOES HERE */
+	
 	}
-
 	return 0;
 }
 
